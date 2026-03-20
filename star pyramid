@@ -1,0 +1,23 @@
+def star_pyramid(n):
+    # Outer loop for the number of rows
+    for i in range(1, n + 1):
+        # Inner loop to print leading spaces for center alignment
+        # The number of spaces decreases with each row
+        for j in range(n - i):
+            print(" ", end="")
+        
+        # Inner loop to print the stars
+        # The number of stars is 2*i - 1 for a full pyramid
+        for k in range(2 * i - 1):
+            print("*", end="")
+        
+        # Move to the next line after each row is complete
+        print()
+
+# Example: Create a star pyramid with 5 rows
+rows = 5
+star_pyramid(rows)
+
+
+
+
